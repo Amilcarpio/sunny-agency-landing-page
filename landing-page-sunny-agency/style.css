@@ -1,0 +1,87 @@
+:root{
+--soft-red: hsl(7, 99%, 70%);
+--yellow: hsl(51, 100%, 49%);
+--dark-cyan: hsl(167, 40%, 24%);
+--dark-blue: hsl(198, 62%, 26%);
+--background-blue: hsl(200, 100%, 62%);
+--dark-moderate-cyan: hsl(168, 34%, 41%);
+--very-blue: hsl(212, 27%, 19%);
+--very-dark-grayish-blue: hsl(213, 9%, 39%);
+--dark-grayish-blue: hsl(232, 10%, 55%);
+--grayish-blue: hsl(210, 4%, 67%);
+--white: hsl(0, 0%, 100%);
+--main-font:'Barlow', sans-serif;
+--secundary-font:'Fraunces', serif;
+}
+body{
+    font-size: 18px;
+    font-family: var(--main-font);
+    background-color: var(--background-blue);
+}
+
+#header {
+    background-image:url(images/desktop/image-header.jpg);
+    width: auto;
+    height: 635px;
+    background-size: cover;
+    background-position: center;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    font-family: var(--main-font);
+    font-size: 30px; 
+    font-weight: 700; 
+    margin-left: 10px;  
+}
+
+#menu > a{
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--main-font);
+    padding: 25px;
+    margin-right: 10px;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    font-family: var(--secundary-font);
+    font-size: 30px;
+    color: var(--white);
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+#arrow{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.button{
+    text-decoration: none;
+    color: black;
+    font-family: var(--secundary-font);
+    font-size: 15px;
+    width: 130px;
+    height: 45px;
+    background-color: var(--white);
+    border-style: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover{
+background-color: rgb(255, 255, 255, 0.4);
+color: var(--white);
+}
