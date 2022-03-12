@@ -191,3 +191,7 @@ color: var(--white);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
+
+.client1, .client2, .client3{
+    border: 1px red solid;
+}
