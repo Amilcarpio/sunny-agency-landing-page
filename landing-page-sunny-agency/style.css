@@ -1,10 +1,10 @@
 :root{
 --soft-red: hsl(7, 99%, 70%);
 --yellow: hsl(51, 100%, 49%);
---dark-cyan: hsl(167, 40%, 24%);
+--dark-cyan: #90d4c5;
 --dark-blue: hsl(198, 62%, 26%);
 --background-blue: hsl(200, 100%, 62%);
---dark-moderate-cyan: hsl(168, 34%, 41%);
+--dark-moderate-cyan: hsl(167, 40%, 24%);
 --very-blue: hsl(212, 27%, 19%);
 --very-dark-grayish-blue: hsl(213, 9%, 39%);
 --dark-grayish-blue: hsl(232, 10%, 55%);
@@ -27,7 +27,6 @@ body{
     height: 635px;
     background-size: cover;
     background-position: center;
-    border: 1px red solid;
 }
 
 #navbar{
@@ -53,6 +52,11 @@ body{
     margin-right: 10px;
 }
 
+.menu-link:hover{
+    font-size: 110%;
+    font-weight: 600;
+}
+
 #main{
     display: flex;
     justify-content: center;
@@ -61,7 +65,6 @@ body{
     color: var(--white);
     letter-spacing: 7px;
     text-align: center;
-    border: 1px red solid;
 }
 
 #arrow{
@@ -95,8 +98,13 @@ color: var(--white);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100%;
-    border: 1px red solid;
     background-color: var(--white);
+}
+
+.paragraph1{
+    color: var(--grayish-blue);
+    font-family: var(--main-font);
+    font-weight: 600;
 }
 
 .fck{
@@ -114,6 +122,32 @@ color: var(--white);
     font-weight: 800;
 }
 
+.link1 {
+    text-decoration-color: var(--yellow);
+    text-decoration-thickness: 4px;
+    color: black;
+    font-family: var(--secundary-font);
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.link2 {
+    text-decoration-color: var(--soft-red);
+    text-decoration-thickness: 4px;
+    color: black;
+    font-family: var(--secundary-font);
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.link1:hover{
+    font-size: 16px;
+}
+
+.link2:hover{
+    font-size: 16px;
+}
+
 .egg-img > img{
     width: 100%;
     height: 100%;
@@ -124,7 +158,6 @@ color: var(--white);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100%;
-    border: 1px red solid;
     background-color: var(--white);
 }
 
@@ -144,7 +177,7 @@ color: var(--white);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100%;
-    border: 1px red solid;
+    height: 560px;
 }
 
 
@@ -169,7 +202,7 @@ color: var(--white);
 }
 
 .graphic-h3, .graphic-p{
-    color: var(--dark-cyan);
+    color: var(--dark-moderate-cyan);
 }
 
 .photography-h3, .photography-p{
@@ -178,12 +211,12 @@ color: var(--white);
 
 .cup-grid3{
     width: 100%;
-    height: 73%;
+    height: 560px;
 }
 
 .orange-grid3{
     width: 100%;
-    height: 100%;
+    height: 560px;
 }
 
 .testimonials-title{
@@ -197,18 +230,17 @@ color: var(--white);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100%;
-    border: 1px red solid;
 }
 
 #testimonials {
     display: flex;
     justify-content: center;
     background-color: var(--white);
-    padding: 90px;
+    padding: 100px;
 }
 
 .client1, .client2, .client3{
-    border: 1px red solid;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -255,4 +287,71 @@ color: var(--white);
     font-size: 15px;
     position: relative;
     bottom: 60px;
+}
+
+#grid4{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#grid4 > img{
+    width: 100%;
+}
+
+.foote-links, .icons, .attribution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.link{
+    color: var(--dark-moderate-cyan);
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    font: var(--main-font);
+    font-weight: 600;
+}
+.link:hover{
+    color: var(--white);    
+}
+
+
+.icon-link{
+    padding: 15px;
+    position: relative;
+    bottom: 30px;
+}
+
+.img-icon:hover{
+    color: white;
+}
+
+#footer > h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--dark-moderate-cyan);
+    position: relative;
+    top: 30px;
+}
+
+#footer{
+    background-color: var(--dark-cyan);
+    height: 300px;
+    border: 1px var(--dark-cyan) solid;
+}
+
+.attribution{
+    background-color: var(--dark-cyan);
+    border: 1px var(--dark-cyan) solid;
+    color: var(--dark-moderate-cyan);
+}
+
+.attribution > a {
+    text-decoration: none;
 }
