@@ -95,9 +95,7 @@ color: var(--white);
 
 #grid1{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     background-color: var(--white);
 }
 
@@ -155,9 +153,7 @@ color: var(--white);
 
 #grid2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     background-color: var(--white);
 }
 
@@ -174,9 +170,7 @@ color: var(--white);
 
 #grid3{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     height: 560px;
 }
 
@@ -242,8 +236,7 @@ color: var(--white);
 .client1, .client2, .client3{
 
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .test-img{
@@ -291,9 +284,7 @@ color: var(--white);
 
 #grid4{
     display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 #grid4 > img{
